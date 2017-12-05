@@ -1,0 +1,1 @@
+# gamebook-json-schema
