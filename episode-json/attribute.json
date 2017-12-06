@@ -1,0 +1,26 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/attribute.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^attribute$"
+    },
+    "value": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "type",
+    "value"
+  ],
+  "additionalProperties": false
+}

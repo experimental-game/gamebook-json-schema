@@ -1,0 +1,29 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/trigger.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "condition-id": {
+      "type": "string"
+    },
+    "feedback-id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "condition-id",
+    "feedback-id",
+    "type"
+  ],
+  "additionalProperties": false
+}

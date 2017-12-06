@@ -1,0 +1,69 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/graphic-novel-image-choice.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^graphic-novel-image-choice$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "question-content-id": {
+      "type": "string"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^trigger$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "confirm": {
+            "type": "string"
+          },
+          "confirm-content-id": {
+            "type": "string"
+          },
+          "trigger": {
+            "$ref": "trigger.json#"
+          },
+          "image-asset-instance-id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "title",
+          "confirm",
+          "confirm-content-id",
+          "trigger",
+          "image-asset-instance-id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "options"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/module.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "staging-component-id": {
+      "type": "string"
+    },
+    "time-component-id": {
+      "type": "string"
+    },
+    "component-ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "staging-component-id",
+    "time-component-id",
+    "component-ids"
+  ],
+  "additionalProperties": false
+}

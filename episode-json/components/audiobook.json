@@ -1,0 +1,18 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/audiobook.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^audiobook$"
+    }
+  },
+  "required": [
+    "id",
+    "type"
+  ],
+  "additionalProperties": true
+}

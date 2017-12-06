@@ -1,0 +1,29 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/branching.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^branching$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "triggers": {
+      "type": "array",
+      "items": {
+        "$ref": "trigger.json#"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "triggers"
+  ],
+  "additionalProperties": false
+}

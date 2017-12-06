@@ -1,0 +1,133 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/index.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "format-version": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "initial-node-id": {
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "components/audiobook-choice.json#"
+          },
+          {
+            "$ref": "components/audiobook.json#"
+          },
+          {
+            "$ref": "components/branching.json#"
+          },
+          {
+            "$ref": "components/choice.json#"
+          },
+          {
+            "$ref": "components/endpoint.json#"
+          },
+          {
+            "$ref": "components/graphic-novel-image-choice.json#"
+          },
+          {
+            "$ref": "components/graphic-novel-text-choice.json#"
+          },
+          {
+            "$ref": "components/graphic-novel.json#"
+          },
+          {
+            "$ref": "components/scene.json#"
+          },
+          {
+            "$ref": "components/staging.json#"
+          },
+          {
+            "$ref": "components/text-adventure.json#"
+          }
+        ]
+      }
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "$ref": "module.json#"
+      }
+    },
+    "feedback": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "feedback.json#"
+          },
+          {
+            "$ref": "feedback-group.json#"
+          }
+        ]
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "condition.json#"
+          },
+          {
+            "$ref": "condition-group.json#"
+          }
+        ]
+      }
+    },
+    "initial-game-state": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "achievement.json#"
+          },
+          {
+            "$ref": "attribute.json#"
+          },
+          {
+            "$ref": "marker.json#"
+          }
+        ]
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "node.json#"
+      }
+    },
+    "adventure-map": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "format-version",
+    "language",
+    "initial-node-id",
+    "components",
+    "modules",
+    "feedback",
+    "conditions",
+    "initial-game-state",
+    "nodes",
+    "adventure-map"
+  ],
+  "additionalProperties": false
+}

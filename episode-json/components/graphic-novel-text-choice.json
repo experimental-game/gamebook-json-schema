@@ -1,0 +1,26 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/graphic-novel-text-choice.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^graphic-novel-text-choice$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "options": {
+      "$ref": "options.json#"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "options"
+  ],
+  "additionalProperties": false
+}

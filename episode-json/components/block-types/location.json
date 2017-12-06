@@ -1,0 +1,31 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/location.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^location$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "location-asset-instance-id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "location-asset-instance-id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

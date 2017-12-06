@@ -1,0 +1,47 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/image.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^image$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "title-content-id": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "string"
+        },
+        "confirm-content-id": {
+          "type": "string"
+        },
+        "prop-asset-instance-id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "title-content-id",
+        "confirm",
+        "confirm-content-id",
+        "prop-asset-instance-id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

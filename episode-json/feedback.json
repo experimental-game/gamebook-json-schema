@@ -1,0 +1,36 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/feedback.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "target-id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "string"
+    },
+    "value": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "target-id",
+    "type",
+    "operator",
+    "value"
+  ],
+  "additionalProperties": false
+}

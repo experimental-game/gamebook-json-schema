@@ -1,0 +1,18 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/audiobook-choice.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^audiobook-choice$"
+    }
+  },
+  "required": [
+    "id",
+    "type"
+  ],
+  "additionalProperties": true
+}

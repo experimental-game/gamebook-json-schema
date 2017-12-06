@@ -1,0 +1,91 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/options.json",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^timeout$"
+          },
+          "text": {
+            "type": "string"
+          },
+          "text-content-id": {
+            "type": "string"
+          },
+          "follow-up-text": {
+            "type": "string"
+          },
+          "follow-up-text-content-id": {
+            "type": "string"
+          },
+          "trigger": {
+            "$ref": "trigger.json#"
+          },
+          "timeout-type": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "text",
+          "text-content-id",
+          "follow-up-text",
+          "follow-up-text-content-id",
+          "trigger",
+          "timeout-type",
+          "duration"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^trigger$"
+          },
+          "text": {
+            "type": "string"
+          },
+          "text-content-id": {
+            "type": "string"
+          },
+          "follow-up-text": {
+            "type": "string"
+          },
+          "follow-up-text-content-id": {
+            "type": "string"
+          },
+          "trigger": {
+            "$ref": "trigger.json#"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "text",
+          "text-content-id",
+          "follow-up-text",
+          "follow-up-text-content-id",
+          "trigger"
+        ],
+        "additionalProperties": false
+      }
+    ]
+  }
+}
