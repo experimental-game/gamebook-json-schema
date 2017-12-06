@@ -1,0 +1,22 @@
+{
+  "name": "gamebook-json-schema",
+  "version": "0.0.1",
+  "description": "Json schemas for Gamebook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/experimental-game/gamebook-json-schema.git"
+  },
+  "keywords": [
+    "gamebook",
+    "json-schema"
+  ],
+  "author": "Experimental Game GmbH",
+  "bugs": {
+    "url": "https://github.com/experimental-game/gamebook-json-schema/issues"
+  },
+  "homepage": "https://github.com/experimental-game/gamebook-json-schema#readme"
+}
