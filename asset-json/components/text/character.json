@@ -1,0 +1,31 @@
+{
+  "id": "http://gamebook.io/schemas/asset-json/components/text-adventure/character.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^text-adventure-character$"
+    },
+    "body": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "color"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "body"
+  ],
+  "additionalProperties": false
+}

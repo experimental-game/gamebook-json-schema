@@ -1,0 +1,45 @@
+{
+  "id": "http://gamebook.io/schemas/asset-json/components/scene/character.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^scene-character$"
+    },
+    "body": {
+      "type": "object",
+      "properties": {
+        "contentId": {
+          "type": "string"
+        },
+        "platforms": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "assetProperties": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "required": [
+        "contentId",
+        "platforms",
+        "assetProperties"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "body"
+  ],
+  "additionalProperties": false
+}
