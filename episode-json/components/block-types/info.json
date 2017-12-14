@@ -1,0 +1,35 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/info.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^info$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "text-content-id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "text-content-id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

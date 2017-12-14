@@ -1,0 +1,31 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/sound.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^sound$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "sound-id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sound-id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

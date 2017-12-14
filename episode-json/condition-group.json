@@ -1,0 +1,30 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/condition-group.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^condition-group$"
+    },
+    "group-type": {
+      "type": "string",
+      "pattern": "^(?:and|or)$"
+    },
+    "condition-ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "group-type",
+    "condition-ids"
+  ],
+  "additionalProperties": false
+}

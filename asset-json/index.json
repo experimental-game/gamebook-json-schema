@@ -1,0 +1,20 @@
+{
+  "id": "http://gamebook.io/schemas/asset-json/index.json",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "$ref": "character.json#"
+      },
+      {
+        "$ref": "location.json#"
+      },
+      {
+        "$ref": "prop.json#"
+      },
+      {
+        "$ref": "image.json#"
+      }
+    ]
+  }
+}

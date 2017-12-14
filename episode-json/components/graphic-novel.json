@@ -1,0 +1,64 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/graphic-novel.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^graphic-novel$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "trigger": {
+      "$ref": "trigger.json#"
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "block-types/ambient-sound.json#"
+          },
+          {
+            "$ref": "block-types/dialog.json#"
+          },
+          {
+            "$ref": "block-types/effect.json#"
+          },
+          {
+            "$ref": "block-types/image.json#"
+          },
+          {
+            "$ref": "block-types/info.json#"
+          },
+          {
+            "$ref": "block-types/location.json#"
+          },
+          {
+            "$ref": "block-types/narrative.json#"
+          },
+          {
+            "$ref": "block-types/notification.json#"
+          },
+          {
+            "$ref": "block-types/sound.json#"
+          },
+          {
+            "$ref": "block-types/tutorial.json#"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "trigger",
+    "messages"
+  ],
+  "additionalProperties": false
+}

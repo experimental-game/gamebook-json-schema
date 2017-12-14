@@ -1,0 +1,42 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/achievement.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^achievement$"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "value": {
+      "type": "boolean"
+    },
+    "title-content-id": {
+      "type": "string"
+    },
+    "description-content-id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "type",
+    "description",
+    "image",
+    "value",
+    "title-content-id",
+    "description-content-id"
+  ],
+  "additionalProperties": false
+}

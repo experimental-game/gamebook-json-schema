@@ -1,0 +1,56 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/endpoint.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^endpoint$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "endpoint-id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "text-content-id": {
+      "type": "string"
+    },
+    "sharing-data": {
+      "id": {
+        "type": "string"
+      },
+      "caption-top-content-id": {
+        "type": "string"
+      },
+      "caption-top": {
+        "type": "string"
+      },
+      "caption-bottom-content-id": {
+        "type": "string"
+      },
+      "caption-bottom": {
+        "type": "string"
+      }
+    },
+    "trigger": {
+      "$ref": "trigger.json#"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "endpoint-id",
+    "text",
+    "text-content-id",
+    "sharing-data",
+    "trigger"
+  ],
+  "additionalProperties": false
+}

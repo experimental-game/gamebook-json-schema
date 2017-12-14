@@ -1,0 +1,35 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/ambient-sound.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^ambient-sound$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "sound-id": {
+          "type": "string"
+        },
+        "switch-type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sound-id",
+        "switch-type"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

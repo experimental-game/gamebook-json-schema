@@ -1,0 +1,42 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/staging.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^staging$"
+    },
+    "instances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "asset-id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "asset-id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "instances"
+  ],
+  "additionalProperties": false
+}

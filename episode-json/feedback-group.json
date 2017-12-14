@@ -1,0 +1,25 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/feedback-group.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^feedback-group$"
+    },
+    "feedback-ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "feedback-ids"
+  ],
+  "additionalProperties": false
+}
