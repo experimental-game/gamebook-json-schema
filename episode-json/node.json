@@ -1,0 +1,57 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/node.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "module-id": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "is-dead-end": {
+      "type": "boolean"
+    },
+    "is-end": {
+      "type": "boolean"
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "destination-node-id": {
+            "type": "string"
+          },
+          "trigger-id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "destination-node-id",
+          "trigger-id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "id",
+    "module-id",
+    "label",
+    "is-dead-end",
+    "is-end",
+    "transitions"
+  ],
+  "additionalProperties": false
+}

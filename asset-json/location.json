@@ -1,0 +1,43 @@
+{
+  "id": "http://gamebook.io/schemas/asset-json/location.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^location$"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "components/graphic-novel/location.json#"
+          },
+          {
+            "$ref": "components/scene/location.json#"
+          },
+          {
+            "$ref": "components/text-adventure/location.json#"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "type",
+    "components"
+  ],
+  "additionalProperties": false
+}

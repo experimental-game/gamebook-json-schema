@@ -1,0 +1,26 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/marker.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^marker$"
+    },
+    "value": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "type",
+    "value"
+  ],
+  "additionalProperties": false
+}

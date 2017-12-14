@@ -1,0 +1,51 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/dialog.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^dialog$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "text-content-id": {
+          "type": "string"
+        },
+        "character-asset-instance-id": {
+          "type": "string"
+        },
+        "off-screen": {
+          "type": "boolean"
+        },
+        "override-name": {
+          "type": "string"
+        },
+        "override-name-content-id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "text-content-id",
+        "character-asset-instance-id",
+        "off-screen",
+        "override-name",
+        "override-name-content-id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

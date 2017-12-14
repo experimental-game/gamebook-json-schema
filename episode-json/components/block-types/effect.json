@@ -1,0 +1,35 @@
+{
+  "id": "http://gamebook.io/schemas/episode-json/components/block-types/effect.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^effect$"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "effect-id": {
+          "type": "string"
+        },
+        "switch-type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "effect-id",
+        "switch-type"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "data"
+  ],
+  "additionalProperties": false
+}

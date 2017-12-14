@@ -1,0 +1,37 @@
+{
+  "id": "http://gamebook.io/schemas/asset-json/image.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^image$"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "components/image/image-representation.json#"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "type",
+    "components"
+  ],
+  "additionalProperties": false
+}
