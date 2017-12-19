@@ -29,6 +29,9 @@
         },
         "override-name-content-id": {
           "type": "string"
+        },
+        "emotion-id": {
+          "type": "string"
         }
       },
       "required": [
@@ -37,7 +40,8 @@
         "character-asset-instance-id",
         "off-screen",
         "override-name",
-        "override-name-content-id"
+        "override-name-content-id",
+        "emotion-id"
       ],
       "additionalProperties": false
     }

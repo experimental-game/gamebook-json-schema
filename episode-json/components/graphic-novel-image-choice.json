@@ -28,7 +28,7 @@
           },
           "type": {
             "type": "string",
-            "pattern": "^trigger$"
+            "pattern": "^image$"
           },
           "title": {
             "type": "string"

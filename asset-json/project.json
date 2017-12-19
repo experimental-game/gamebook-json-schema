@@ -1,5 +1,5 @@
 {
-  "id": "http://gamebook.io/schemas/asset-json/prop.json",
+  "id": "http://gamebook.io/schemas/asset-json/project.json",
   "type": "object",
   "properties": {
     "id": {
@@ -13,17 +13,14 @@
     },
     "type": {
       "type": "string",
-      "pattern": "^prop$"
+      "pattern": "^project$"
     },
     "components": {
       "type": "array",
       "items": {
         "oneOf": [
           {
-            "$ref": "components/graphic-novel/customization.json#"
-          },
-          {
-            "$ref": "components/image/image-representation.json#"
+            "$ref": "components/graphic-novel/theme.json#"
           }
         ]
       }
