@@ -101,6 +101,9 @@
           },
           {
             "$ref": "marker.json#"
+          },
+          {
+            "$ref": "asset.json"
           }
         ]
       }

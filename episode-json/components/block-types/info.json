@@ -17,11 +17,19 @@
         },
         "text-content-id": {
           "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "title-content-id": {
+          "type": "string"
         }
       },
       "required": [
         "text",
-        "text-content-id"
+        "text-content-id",
+        "title",
+        "title-content-id"
       ],
       "additionalProperties": false
     }

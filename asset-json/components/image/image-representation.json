@@ -12,15 +12,22 @@
     "body": {
       "type": "object",
       "properties": {
-        "platforms": {
+        "external-asset-content": {
           "type": "object",
-          "additionalProperties": {
-            "type": "string"
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "platforms": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
           }
         }
       },
       "required": [
-        "platforms"
       ],
       "additionalProperties": false
     }

@@ -1,5 +1,5 @@
 {
-  "id": "http://gamebook.io/schemas/asset-json/components/scene/location.json",
+  "id": "http://gamebook.io/schemas/asset-json/components/graphic-novel/theme.json",
   "type": "object",
   "properties": {
     "id": {
@@ -7,7 +7,7 @@
     },
     "type": {
       "type": "string",
-      "pattern": "^scene-location$"
+      "pattern": "^graphic-novel-theme$"
     },
     "body": {
       "type": "object",
@@ -15,10 +15,18 @@
         "content-id": {
           "type": "string"
         },
-        "platforms": {
+        "external-asset-content": {
           "type": "object",
-          "additionalProperties": {
-            "type": "string"
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "platforms": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
           }
         },
         "asset-properties": {

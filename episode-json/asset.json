@@ -1,5 +1,5 @@
 {
-  "id": "http://gamebook.io/schemas/episode-json/marker.json",
+  "id": "http://gamebook.io/schemas/episode-json/asset.json",
   "type": "object",
   "properties": {
     "id": {
@@ -10,10 +10,13 @@
     },
     "type": {
       "type": "string",
-      "pattern": "^(key|marker)$"
+      "pattern": "^asset$"
     },
     "value": {
-      "type": "boolean"
+      "type": "string"
+    },
+    "required-component-types": {
+      "type": "array"
     }
   },
   "required": [
